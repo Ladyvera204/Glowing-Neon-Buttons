@@ -1,0 +1,795 @@
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('/fonts/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+ :root {
+    --body: hsl(222, 47%, 11%);
+    --light-green: hsl(152, 31%, 90%);
+    --white-color: hsl(0, 0%, 100%);
+    --box-color: hsl(15, 77%, 95%);
+    --disable-btn: hsl(0, 0%, 93%);
+}
+
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Set core root defaults */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: 'Lora-Italic-VariableFont_wght';
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+}
+
+
+/* Set core body defaults */
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+/* Make images easier to work with */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* Remove all animations and transitions for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* ==========GLOBAL STYLES=========== */
+
+.header {
+    width: 100%;
+    max-width: 72.8125rem;
+    margin: 0 auto;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================OPACITY=========== */
+
+.box-1,
+.box-2,
+.box-11,
+.box-12,
+.span2-video,
+.span,
+.link {
+    content: "";
+    opacity: .8;
+    z-index: 10;
+}
+
+.p,
+.P1,
+.p2,
+.p3,
+.p4,
+.a-video {
+    content: "";
+    opacity: .7;
+    z-index: 10;
+}
+
+.span1,
+.span4,
+.span5 {
+    content: "";
+    opacity: .5;
+    z-index: 10;
+}
+
+
+/* ===========MAIN STYLE=========== */
+
+header {
+    width: 20rem;
+    height: 10rem;
+    margin-top: 3rem;
+    margin-left: 35rem;
+    text-align: center;
+}
+
+
+/* ================NAV-BOX==================== */
+
+.nav,
+.box,
+ul,
+.link,
+.a1 {
+    margin: 0.1rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    display: flex;
+    background-color: var(--box-color);
+    display: block;
+}
+
+.link {
+    margin-left: 2rem;
+    font-size: 16px;
+    gap: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    color: white !important;
+}
+
+
+/* ==================FIRST-IMAGE-SECTION===================== */
+
+.images {
+    margin: 5rem;
+    gap: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    object-fit: cover;
+}
+
+.sb {
+    width: 19rem;
+    height: 23rem;
+    position: relative;
+    object-fit: cover;
+}
+
+.box-1,
+.box-2 {
+    position: absolute;
+    top: 18.7rem;
+    left: -0.19rem;
+    width: 19rem;
+    height: 9rem;
+    padding: 1.4rem;
+    font-size: large;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: hsl(15, 77%, 95%);
+}
+
+.bride,
+.b-image {
+    width: 19rem;
+    height: 27.7rem;
+    object-fit: cover;
+}
+
+.b-image {
+    margin-left: -0.8rem;
+    margin-top: -0.02rem;
+    background-color: hsl(152, 31%, 90%);
+    text-transform: capitalize;
+}
+
+.p {
+    margin: 2rem;
+    margin-top: 8rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    align-items: center;
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* ====================SECOND-IMAGE-SECTION=========================*/
+
+.second-images {
+    object-fit: cover;
+    margin: 2rem;
+    width: 26rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    object-fit: cover;
+}
+
+.tm-1,
+.tm-3 {
+    position: absolute;
+    width: 18rem;
+    height: 24rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 0.3rem;
+    object-fit: cover;
+}
+
+.box-11 {
+    position: relative;
+    top: 14rem;
+    right: -0.2rem;
+    width: 11rem;
+    height: 2.5rem;
+    padding-top: 0.3rem;
+    padding-left: 0.2rem;
+    text-align: center;
+    justify-items: auto;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+}
+
+.box-12 {
+    position: relative;
+    top: 26rem;
+    left: 0.1rem;
+    width: 24.11rem;
+    height: 8rem;
+    padding: 2rem;
+    font-size: 19px;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--black-color);
+    background-color: var(--box-color);
+}
+
+.tm-2 {
+    position: absolute;
+    margin-left: 0.1rem;
+    width: 24rem;
+    height: 26rem;
+    object-fit: cover;
+}
+
+
+/* ===================THIRD-IMAGE-SECTION==================== */
+
+.si {
+    position: absolute;
+    margin: 18rem;
+    width: 70rem;
+    height: 70rem;
+    object-fit: cover;
+}
+
+.si-box {
+    position: relative;
+    top: 41.15rem;
+    right: -1rem;
+    width: 31rem;
+    height: 10rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: serif;
+    color: black;
+    background-color: var(--light-green);
+}
+
+a {
+    color: black !important;
+}
+
+.span {
+    margin: 7rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+
+/* ===================FOURTH-IMAGE-SECTION====================== */
+
+.mul-image {
+    position: absolute;
+    top: 150rem;
+    width: 100%;
+    height: 75rem;
+    background-color: var(--box-color);
+}
+
+.fouth-image1,
+.fouth-image2 {
+    position: relative;
+    top: 7rem;
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fouth-image1 {
+    margin-bottom: 4rem;
+}
+
+.b-image2 {
+    position: relative;
+    width: 20rem;
+    height: 29rem;
+    margin-left: -3.9rem;
+    margin-top: -0.02rem;
+    text-transform: capitalize;
+    background-color: white;
+}
+
+.bride2 {
+    width: 22rem;
+    height: 29rem;
+    object-fit: cover;
+}
+
+.p1 {
+    position: absolute;
+    top: 8rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 2.3rem;
+    align-items: center;
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.span1 {
+    position: absolute;
+    top: 6rem;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/* =================FIFTH-IMAGE-VIDEO-SECTION==================== */
+
+.video-container {
+    position: relative;
+    top: 127rem;
+    margin-top: 15rem;
+    width: 94.96rem;
+    height: 48rem;
+    background-color: var(--light-green);
+}
+
+iframe {
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: 9rem;
+    background-color: var(--light-green);
+}
+
+.video-smallbox {
+    position: absolute;
+    top: 37.2rem;
+    width: 50.7rem;
+    height: 7rem;
+    margin-left: 9rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--white-color);
+}
+
+.span2-video {
+    margin: 16rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.a-video {
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.side-video-elements {
+    position: absolute;
+    top: 6rem;
+    right: 9rem;
+    width: 23rem;
+    height: 38.5rem;
+    background-color: var(--white-color);
+}
+
+.first-element {
+    position: relative;
+    bottom: 3.7rem;
+    right: 8rem;
+}
+
+.vid-explain {
+    position: absolute;
+    top: 6rem;
+    left: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: var(--box-color);
+}
+
+.second-element {
+    position: relative;
+    top: 3rem;
+    right: 8rem;
+}
+
+.vid-explain2 {
+    position: absolute;
+    top: 12.5rem;
+    left: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.third-element {
+    position: relative;
+    top: 9.7rem;
+    right: 8rem;
+}
+
+.vid-explain3 {
+    position: absolute;
+    top: 19.5rem;
+    left: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-transform: capitalize;
+}
+
+.forth-element {
+    position: relative;
+    top: 16.5rem;
+    right: 8rem;
+}
+
+.vid-explain4 {
+    position: absolute;
+    top: 26rem;
+    left: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-transform: capitalize;
+}
+
+
+/* =====================SIXTH-IMAGE-SECTION================ */
+
+.stand-alone {
+    position: relative;
+    top: 135rem;
+}
+
+.bride3 {
+    position: absolute;
+    width: 24rem;
+    height: 35rem;
+    top: 3rem;
+    left: 12rem;
+    object-fit: cover;
+}
+
+.b-image3 {
+    content: "";
+    opacity: .6;
+    z-index: 10;
+    position: relative;
+    top: 3rem;
+    left: 36rem;
+    width: 24rem;
+    height: 35rem;
+    background-color: var(--light-green);
+}
+
+.span3 {
+    position: relative;
+    top: 5rem;
+    padding: 7rem;
+    font-size: 0.7rem;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.p2 {
+    position: absolute;
+    top: 14rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 2.3rem;
+    padding: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.suscribe-box {
+    position: absolute;
+    top: 3rem;
+    left: 62rem;
+    width: 24rem;
+    height: 35rem;
+    background-color: var(--box-color);
+}
+
+.club {
+    text-align: center;
+    font-weight: 600;
+    margin: 8rem 1rem;
+    font-size: 1.5rem;
+    padding: 3rem;
+    text-transform: capitalize;
+}
+
+input {
+    position: absolute;
+    top: 18rem;
+    left: 3rem;
+    width: 18rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    text-align: center;
+    border: white;
+    background-color: var(--white-color);
+}
+
+.click {
+    position: absolute;
+    top: 22.3rem;
+    left: 7rem;
+    width: 9rem;
+    height: 3rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--light-green);
+}
+
+
+/* =========================LAST-IMAGE-SECTION======================== */
+
+.last {
+    position: relative;
+    top: 147rem;
+    width: 94.9rem;
+    height: 65rem;
+    background-color: var(--box-color);
+}
+
+.b-image4 {
+    position: absolute;
+    top: 5rem;
+    left: 8rem;
+    width: 19rem;
+    height: 29rem;
+    background-color: var(--white-color);
+}
+
+.span4,
+.span5 {
+    position: relative;
+    top: 6rem;
+    padding: 5rem;
+    font-size: 0.7rem;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.p3,
+.p4 {
+    position: absolute;
+    top: 11.7rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 2.3rem;
+    padding: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bride4 {
+    position: absolute;
+    top: 5rem;
+    left: 27.1rem;
+    width: 19rem;
+    height: 29rem;
+    object-fit: cover;
+    text-align: center;
+}
+
+.b-image5 {
+    position: absolute;
+    top: 5rem;
+    left: 49rem;
+    width: 19rem;
+    height: 29rem;
+    background-color: var(--white-color);
+}
+
+.bride5 {
+    position: absolute;
+    top: 5rem;
+    left: 68.1rem;
+    width: 19rem;
+    height: 29rem;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+/* ===================LOAD-BUTTON */
+
+.more {
+    position: absolute;
+    top: 37rem;
+    right: 41rem;
+    width: 12rem;
+    height: 3rem;
+    padding: 0.6rem;
+    border: 0.01rem thin gray;
+    border-radius: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--light-green);
+}
+
+
+/* ===================MEDIA-HANDLES================== */
+
+.social-media .nav-socials {
+    position: relative;
+    top: 55rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.fb {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* =====================FOOTER==================== */
+
+.footer-section {
+    position: relative;
+    top: 145rem;
+    width: 94.7rem;
+    height: 15rem;
+    background-color: black;
+}
+
+.footer,
+.a2 {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.a2 {
+    position: relative;
+    text-align: center;
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.copywrite-box {
+    color: white !important;
+    padding: 4rem;
+}
+
+.p6 {
+    margin-top: 1rem;
+    margin-left: 34rem;
+}
+
+.note {
+    margin: 0.2rem;
+    margin-left: 24rem;
+}
